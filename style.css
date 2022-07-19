@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+/*----------
+ hero-section
+ ---------*/
+ .container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border-radius: 40px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+ }
+ .half-width{
+    width: 50%;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+ .half-width img{
+    width: 100%;
+   margin-bottom: -7px;
+ }
+ .half-width h1{
+    font-size: 50px;
+ }
+ .half-width p{
+    margin-top: -32px;
+    margin-bottom: 31px;
+ }
+ .hero-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: #ff2f2f;
+    padding: 10px 15px;
+    border-radius: 6px;
+ }
+ @media only screen and (min-width:689px) and (max-width:992px) {
+   .container{
+      width: 100%;
+   }
+   .half-width img{
+      width: 100%;
+      padding-top: 28%;
+   }
+   .half-width h1{
+      font-size: 41px;
+   }
+   .half-width p{
+      font-size: 13px;
+   }
+   .half-width{
+      width: 100%;
+      
+      /* line-height: 5px; */
+   }
+   /* .hero-button{
+      margin-bottom: 0%;
+   } */
+}
+ @media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .half-width{
+        justify-content: center;
+        width: 100%;
+    }
+    .half-width h1{
+        text-align: center;
+    }
+    .half-width p{
+        text-align: center;
+    }
+    .button{
+      text-align: center;
+    }
+    .half-width img{
+      width: 80%;
+      padding-top: 10%;
+      padding-left: 15%;
+    } 
+ }
