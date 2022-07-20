@@ -61,6 +61,7 @@ body{
  .blogs{
    display: flex;
    padding-top: 10%;
+   padding-bottom: 5%;
  }
  .blog, .blog-image img{
    width: 100%;
@@ -156,16 +157,12 @@ body{
    padding-right: 10%;
  }
  footer{
-   /* position: absolute;
-      bottom: 0;
-      height: 40px;
-      margin-top: 40px; */
-   background-color: #000000;
+  
+    background-color: #000000;
    padding: 5%;
    margin: 0;
-   align-items: center;
-   justify-items: center;
-   justify-content: center;
+
+    
  }
  .footer-hr{
    opacity: 20%;
@@ -192,14 +189,15 @@ body{
   a {
      text-align: center;
      text-decoration: none;
-     color: #ffffff;
+     color: white;
+     font-size: 20px;
   }
  .contact-us{
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
  } 
+ 
    
 
 
@@ -315,9 +313,9 @@ body{
       margin-bottom: 25px;
    }
       .contact-us {
-         display: flex;
-         justify-content: center;
-         align-items: center;
+         display: grid;
+         grid-template-rows: repeat(1, 1fr);
+         
       }
    
  }
